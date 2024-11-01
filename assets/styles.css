@@ -345,11 +345,11 @@ footer{
 #footer-links{
     display: flex;
     justify-content: space-between;
-    flex-direction: column;
+    flex-direction: row;
 }
 #footer-links a{
     margin: 0 10px;
-    font-size: 18px;
+    font-size: 20px;
     padding: 10px;
     text-align: center;
 }
@@ -368,5 +368,3 @@ footer h3{
     font-weight: 700;
     padding: 20px;
 }
-
-/*media queries*/
