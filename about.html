@@ -3,11 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>About us</title>
     <link rel = "stylesheet" type = "text/css" href = "./assets/styles.css" />   
     <link rel = "stylesheet" type = "text/css" href = "./assets/about.css" />  
 </head>
-<body>  
+<body>
+<div class="container">  
+    <div id="navbar">
+        <div id="logo">
+            <img src="./assets/logo.png" alt="logo">
+        </div>
+        <div id="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html" class="active">About</a>
+            <a href="services.html">Services</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <div id="nav-cta">
+            <button class="main-btn">Book service</button>       
+            <button class="secondary-btn">Login</button>                 
+    </div>
+    </div>
+    <div class="container">
     <!-- Selling Points -->
     <section id="selling-points">
         <div class="selling-point">
@@ -46,7 +63,33 @@
             <p>Our tax planning services are designed to help you minimize your tax liability.</p>
         </div>
     </section>
-    <script src="./src/index.js"></script>
+</div>
+
+    <footer>
+        <div id="footer-logo">
+            <img src="./assets/logo.png" alt="logo">
+            <div id="footer-socials">
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-instagram"></i>
+            </div>
+        </div>
+        <div id="footer-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <div  class="office-address">
+            <h3>Head Office</h3>
+            <p>Pioneer House, 4th floor Suite 407<br> Moi Avenue, Nairobi</p>
+            <br>
+            <p class="phone">+254 712 345 678</p>
+            <p class="email">itothyaagenciesltd@gmail.com</p>
+        </div>
+    </footer>
+    </body>
+    <script src="./src/script.js"></script>
     <script src="./src/font-awesome.js" crossorigin=" anonymous"></script>
 </body>
 </html>

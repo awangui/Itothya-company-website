@@ -72,13 +72,28 @@ body{
 }
 #nav-links a:hover{
     color: #fda145;
+    border-bottom: solid 1.5px #fda145;
+}
+#nav-links a.active{
+    color: #3087A8;
+    border-bottom: solid 1.5px #3087A8;
+}
+#nav-cta .main-btn{
+    margin: 0 10px;
+    background-color: #2d82a3;
+}
+button{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 15px 20px;
+    border-radius: 5px;
+    font-size: 18px;
+    margin:0 10px;
 }
 .main-btn{
     background-color: #fda145;
     color: #fff;
-    padding: 15px 20px;
-    border-radius: 5px;
-    font-size: 16px;
     cursor: pointer;
     border: none;
     border-radius: 4px;
@@ -86,9 +101,6 @@ body{
 .secondary-btn{
     background-color: #fff;
     color: #000;
-    padding: 15px 20px;
-    border-radius: 5px;
-    font-size: 16px;
     cursor: pointer;
     border: 1px solid #000;
 }
@@ -202,9 +214,9 @@ body{
     justify-content: space-between;
     flex-direction: row;
     align-items: center;
-    padding: 0 50px;
-    height: 50vh;
-    background-color: #fda145;
+    padding:50px;
+    height:fit-content;
+    background-color: #3087A8;
     color: #fff;
 }
 .testimonial{
@@ -224,7 +236,19 @@ body{
     font-size: 20px;
     padding: 20px;
 }
+.testimonial-image{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 20px auto;
+}
+.testimonial-image img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
 
+}
 /*footer*/
 footer{
     display: flex;
