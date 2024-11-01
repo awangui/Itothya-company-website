@@ -208,6 +208,48 @@ button{
     font-size: 20px;
     padding: 15px;
 }
+#booking{
+    text-align: center;
+    align-items: center;
+    padding: 50px;
+    height: 50vh;
+    background-color: #3087A8;
+    color: #fff;
+}
+#booking-form{
+    text-align: center;
+    width: 80%;
+    margin: auto auto;
+    line-height: 1.5;
+}
+#booking-form h2{
+    font-size: 30px;
+    font-weight: 700;
+    padding: 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+#booking-form input{
+    width: 50%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #fda145;
+}
+
+#booking-form button{
+    margin: 20px;
+    font-size: 25px;
+    padding: 15px 40px;
+}
+#booking-form select{
+    width: 50%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #fda145;
+}
+
 /*testimonials*/
 #testimonials{
     display: flex;
@@ -248,6 +290,41 @@ button{
     border-radius: 50%;
     object-fit: cover;
 
+}
+/* contact us */
+#contact-form{
+    text-align: center;
+    align-items: center;
+    padding: 50px;
+    height: 50vh;
+    background-color: #2d82a3;
+    color: #fff;
+}
+#contact-form h2{
+    font-size: 30px;
+    font-weight: 700;
+    padding: 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+#contact-form input{
+    width: 50%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #fda145;
+}
+#contact-form textarea{
+    width: 50%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #fda145;
+}
+#contact-form button{
+    margin: 20px;
+    font-size: 25px;
+    padding: 15px 40px;
 }
 /*footer*/
 footer{

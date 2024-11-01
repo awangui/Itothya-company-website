@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Services</title>
     <link rel = "stylesheet" type = "text/css" href = "./assets/styles.css" />
+    <link rel = "stylesheet" type = "text/css" href = "./assets/about.css" />
 </head>
 <body>
     <div id="navbar">
@@ -14,13 +15,50 @@
         <div id="nav-links">
             <a href="index.html">Home</a>
             <a href="about.html">About</a>
-            <a href="services.html">Services</a>
+            <a href="services.html" class="active">Services</a>
             <a href="contact.html">Contact</a>
         </div>
         <div id="nav-cta">
-            <button class="main-btn">Book service</button>       
+            <a href="services.html#booking"><button class="main-btn">Book service</button> </a>    
             <button class="secondary-btn">Login</button>                 
     </div>
+    </div>
+    <div class="container" >
+        <section id="services">
+            <h2>Our Services</h2>
+            <div class="service">
+                <i class="fas fa-chart-line"></i>
+                <h3>Investment Planning</h3>
+                <p>Our investment planning services are designed to help you grow your wealth.</p>
+            </div>
+            <div class="service">
+                <i class="fas fa-hand-holding-usd"></i>
+                <h3>Retirement Planning</h3>
+                <p>Our retirement planning services are designed to help you retire comfortably.</p>
+            </div>
+            <div class="service">
+                <i class="fas fa-file-invoice-dollar"></i>
+                <h3>Tax Planning</h3>
+                <p>Our tax planning services are designed to help you minimize your tax liability.</p>
+            </div>
+        </section>
+        <h2 class="title">Request a Service</h2>
+        <div id="booking">
+            <form id="booking-form">
+                <label for="name" >Name</label>
+                <input type="text" id="name" name="name" required placeholder="e.g John Doe"><br>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email"placeholder="e.g Johndoe@gmail.com"required><br>
+                <label for="service">Service</label>
+                <select id="service" name="service" required>
+                    <option value="">Select a service</option>
+                    <option value="Investment Planning">Investment Planning</option>
+                    <option value="Retirement Planning">Retirement Planning</option>
+                    <option value="Tax Planning">Tax Planning</option>
+                </select><br>
+                <button class="secondary-btn" onclick="submitRequest()">Request</button>
+            </form>
+        </div>
     </div>
     <footer>
         <div id="footer-logo">
@@ -46,5 +84,6 @@
         </div>
         
     </footer>
+    <script src="./src/script.js"></script>
 </body>
 </html>

@@ -1,57 +1,71 @@
-/*selling points*/
-#selling-points{
+/* About Us Section */
+#about-us {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    padding: 20px;
+    padding-top: 100px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    position: relative;
+    z-index: 1; 
+    margin: 10px; 
+}
+
+.about-content, .mission-vision, .values-policies {
+    margin-bottom: 40px; 
+}
+
+.about-content h2 {
+    color: #0056b3;
+    font-size: 28px;
+    margin-bottom: 20px; 
+}
+
+.mission-vision {
     display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    align-items: center;
-    padding: 0 50px;
-    height: 50vh;
-    background-color: #f9f9f9;
-    color: #000;
+    flex-wrap: wrap;
+    gap: 20px;
 }
-.selling-point{
-    text-align: center;
-    width: 30%;
-    margin: auto auto;
-    line-height: 1.5;
+
+.mission, .vision {
+    flex: 1;
+    min-width: 280px;
 }
-.selling-point h1{
-    font-size: 30px;
-    font-weight: 700;
-    padding: 20px;
-    text-transform: uppercase;
-    letter-spacing: 3px;
+h3{
+    color: #ff6600;
+    font-size: 22px;
+    margin-bottom: 8px;
 }
-.selling-point p{
-    font-size: 20px;
-    padding: 20px;
-}/*about*/
-#about{
+.values{
     display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    align-items: center;
-    padding: 0 50px;
-    height: 50vh;
-    background-color: #fda145;
-    color: #fff;
+    flex-wrap: wrap;
+    gap: 20px;
 }
-.about-content{
-    text-align: center;
-    width: 50%;
-    margin: auto auto;
-    line-height: 1.5;
+.values li{
+    flex: 1;
+    min-width: 280px;
+
 }
-#about h1{
-    font-size: 50px;
-    font-weight: 700;
-    padding: 20px;
-    text-transform: uppercase;
-    letter-spacing: 3px;
+
+.values ul, .policies ul {
+    list-style-type: none;
+    padding-left: 0;
 }
-#about p{
-    font-size: 25px;
-    padding: 20px;
+
+.values li, .policies li {
+    margin-bottom: 10px; /* Increased margin for more whitespace */
+}
+
+.values li strong {
+    color: #0056b3;
+}
+
+/* Our Policies Section as Grid */
+.policies {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(200px, 1fr));
+    gap: 20px;
 }
 /*services*/
 #services{
